@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">PandoraApp</string>
+    <string name="spela">Starta spelet</string>
+    <string name="text">texten går att ändra</string>
+    <string name="que">?</string>
+</resources>
