@@ -1,4 +1,4 @@
-package com.example.student.pandoraapp;
+package com.example.student.pandoras;
 
 import org.junit.Test;
 
