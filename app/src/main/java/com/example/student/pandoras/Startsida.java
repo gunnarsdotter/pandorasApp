@@ -21,5 +21,7 @@ public class Startsida extends AppCompatActivity {
     public void openQuestion(View v){
         setContentView(R.layout.questionpage);
     }
-
+    public void openInfo(View v) {
+        v.setBackgroundResource(R.color.colorPrimaryDark);
+    }
 }
