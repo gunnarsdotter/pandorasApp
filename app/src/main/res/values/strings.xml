@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">pandoras</string>
+    //Startsida
+    <string name="app_name">Pandoras App</string>
+    <string name="info">I</string>
+    <string name="play">Spela</string>
+
+    //add_questionpage
+    <string name="rubric1">Fyll kistan!</string>
+    <string name="textbox_question">Ställ en fråga...</string>
+    <string name="add_question">Lägg till fråga</string>
+    <string name="start">Starta!</string>
+
+    //questionpage
+    <string name="rubric_question">Fråga 1</string>
+    <string name="question">Vem är du?</string>
+    <string name="next_question">Nästa fråga</string>
+    <string name="rubric_end">Rundan är slut!</string>
+    <string name="text_end">Spela en ny runda med nya frågor!</string>
+    <string name="new_game">Spela en ny runda</string>
+    <string name="main">Huvudmeny</string>
+
+
 </resources>
