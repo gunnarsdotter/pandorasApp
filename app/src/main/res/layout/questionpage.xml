@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:layout_marginStart="23dp"
-        android:onClick="openAddQuestion"
+        android:onClick="next_question"
         android:text="@string/new_game"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintStart_toStartOf="@+id/textView3"
