@@ -30,6 +30,10 @@ public class Startsida extends AppCompatActivity {
     public void openInfo(View v) {
         v.setBackgroundResource(R.color.colorPrimaryDark);
     }
+    public void clean(View v) {
+        EditText text = findViewById(R.id.editText);
+        text.setText("");
+    }
 
     public void add_question(View v){
         EditText textWriter = findViewById(R.id.editText);
