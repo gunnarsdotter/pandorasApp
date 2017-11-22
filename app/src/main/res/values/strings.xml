@@ -23,5 +23,14 @@
     <string name="main">Huvudmeny</string>
 
     //info
-
+    <string name="alert_info">Information</string>
+    <string name="alert_info_text1">Välkommen till Pandoras App!
+        Spelet går ut på att ställa anonyma frågor till dina vänner (eller ovänner).  Frågorna samlas i kistan som sedan öppnas upp då spelet startar. Om personen som frågan ställs till inte kan eller vill svara så får den dricka ett antal klunkar från sin dryck. Antal klunkar bestämmer ni själva. Klicka på “Spela” för att komma vidare till nästa steg! </string>
+    <string name="alert_info_text2">Det är dags att ställa frågor!
+        Skriv din fråga i textrutan och lägg till den i kistan genom att klicka på “lägg till fråga”. När ni är nöjda med antal frågor, klicka på “Öppna kistan”. Spelet har börjat!
+    </string>
+    <string name="alert_info_text3">När kistan öppnas kommer frågorna vara slumpade och första personen får svara på en fråga. När frågan har blivit besvarad, klicka på “Nästa fråga”. Om en spelare vill lägga till en fråga under rundan klicka på “Lägg till fråga”. När frågorna är slut är rundan över.</string>
+    <string name="alert_info_text4">Rundan är nu över och ni kan antingen gå tillbaka till huvudmenyn eller spela en ny runda. Om ni vill spela en till runda kommer ni få möjligheten att skriva in nya frågor till kistan.
+        Hoppas ni hade en bra omgång!
+    </string>
 </resources>

@@ -45,16 +45,39 @@ public class Startsida extends AppCompatActivity {
             //textViewer.setText("Inga frågor gå tillbaka?");
             //Button buttonChangeText = findViewById(R.id.button4);
             //buttonChangeText.setVisibility(View.VISIBLE);
-
-
         }
     }
-    public void openInfo(View v) {
+    public void openInfo1(View v) {
         // 1. Instantiate an AlertDialog.Builder with its constructor
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-
         // 2. Chain together various setter methods to set the dialog characteristics
-       // builder.setMessage(R.string.aleart_info_text).setTitle(R.string.alert_info);
+        builder.setMessage(R.string.alert_info_text1).setTitle(R.string.alert_info);
+
+        builder.setPositiveButton(R.string.alert_button, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) { }
+        });
+        // 3. Get the AlertDialog from create()
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+    public void openInfo2(View v) {
+        // 1. Instantiate an AlertDialog.Builder with its constructor
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        // 2. Chain together various setter methods to set the dialog characteristics
+        builder.setMessage(R.string.alert_info_text2).setTitle(R.string.alert_info);
+
+        builder.setPositiveButton(R.string.alert_button, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) { }
+        });
+        // 3. Get the AlertDialog from create()
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+    public void openInfo3(View v) {
+        // 1. Instantiate an AlertDialog.Builder with its constructor
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        // 2. Chain together various setter methods to set the dialog characteristics
+        builder.setMessage(R.string.alert_info_text4).setTitle(R.string.alert_info);
 
         builder.setPositiveButton(R.string.alert_button, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) { }

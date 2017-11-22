@@ -29,7 +29,7 @@
         android:layout_marginTop="5dp"
         android:background="@drawable/info"
         android:fontFamily="@fonts/pandoraFont"
-        android:onClick="openInfo"
+        android:onClick="openInfo1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
