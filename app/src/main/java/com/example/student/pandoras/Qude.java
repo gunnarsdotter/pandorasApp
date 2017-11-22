@@ -39,11 +39,3 @@ public class Qude {
     public int getI(){return questionList.size();}
 }
 
-
-   /*use i
-    public void increaseI(){
-        i++;
-    }
-    public void decreaseI(){
-        i--;
-    }*/

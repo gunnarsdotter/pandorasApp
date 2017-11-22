@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:layout_editor_absoluteY="81dp">
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@drawable/bg">
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginBottom="230dp"
-        android:autoText="false"
         android:contextClickable="false"
         android:ems="10"
         android:hint="@string/textbox_question"
         android:inputType="textMultiLine"
+        android:onClick="bottomChange"
         android:selectAllOnFocus="false"
         android:singleLine="false"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,6 +32,7 @@
         android:layout_marginBottom="35dp"
         android:layout_marginEnd="99dp"
         android:layout_marginStart="99dp"
+        android:enabled="false"
         android:background="@drawable/laggtillfragagra"
         android:onClick="add_question"
         app:layout_constraintBottom_toTopOf="@+id/button7"
@@ -57,6 +59,7 @@
         android:layout_marginBottom="91dp"
         android:layout_marginEnd="5dp"
         android:layout_marginTop="5dp"
+        android:enabled="false"
         android:background="@drawable/info"
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"

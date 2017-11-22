@@ -10,6 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import static com.example.student.pandoras.R.drawable.laggtillfraga;
+
 
 public class Startsida extends AppCompatActivity {
     public Qude myQude;
@@ -26,6 +28,11 @@ public class Startsida extends AppCompatActivity {
     }
     public void openAddQuestion(View v){
         setContentView(R.layout.add_questionpage);
+        Button buttonChange = findViewById(R.id.button6);
+        buttonChange.setEnabled(false);
+        buttonChange.setBackgroundResource(R.drawable.laggtillfragagra);
+        Button buttonChange2 = findViewById(R.id.button7);
+        buttonChange2.setEnabled(false);
     }
     public void openQuestion(View v) {
         if(myQude.getI() != 0){
@@ -34,26 +41,44 @@ public class Startsida extends AppCompatActivity {
             textViewer.setText(myQude.getQuestion().concat(Integer.toString(myQude.getRandomNumber())));
         }
         else{
-            setContentView(R.layout.questionpage);
-            TextView textViewer = findViewById(R.id.textView3);
-            textViewer.setText("Inga frågor gå tillbaka?");
+            //TextView textViewer = findViewById(R.id.textView3);
+            //textViewer.setText("Inga frågor gå tillbaka?");
             //Button buttonChangeText = findViewById(R.id.button4);
             //buttonChangeText.setVisibility(View.VISIBLE);
-            Button buttonChangeVisible = findViewById(R.id.button9);
-            buttonChangeVisible.setVisibility(View.GONE);
+
+
         }
     }
     public void openInfo(View v) {
-        v.setBackgroundResource(R.color.colorPrimaryDark);
+        // 1. Instantiate an AlertDialog.Builder with its constructor
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+        // 2. Chain together various setter methods to set the dialog characteristics
+       // builder.setMessage(R.string.aleart_info_text).setTitle(R.string.alert_info);
+
+        builder.setPositiveButton(R.string.alert_button, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) { }
+        });
+        // 3. Get the AlertDialog from create()
+        AlertDialog dialog = builder.create();
+        dialog.show();
     }
 
+
+    public void bottomChange(View v){
+        Button buttonChange = findViewById(R.id.button6);
+        buttonChange.setBackgroundResource(R.drawable.laggtillfraga);
+        buttonChange.setEnabled(true);
+    }
     public void add_question(View v){
         EditText textWriter = findViewById(R.id.editText);
-
         if(!textWriter.getText().toString().isEmpty()){
             myQude.addQuestion(new Question(textWriter.getText().toString()));
             textWriter.setText("");
             textWriter.setHint("Lägg till en ny fråga");
+            Button buttonChange = findViewById(R.id.button7);
+            buttonChange.setEnabled(true);
+
         }
         else{
             // 1. Instantiate an AlertDialog.Builder with its constructor
@@ -72,7 +97,6 @@ public class Startsida extends AppCompatActivity {
         }
 
     }
-
     public void next_question(View v) {
         if(myQude.getI() > 1) {
             myQude.removeQuestion();
