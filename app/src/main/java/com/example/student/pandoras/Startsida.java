@@ -1,11 +1,14 @@
 package com.example.student.pandoras;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
 
 public class Startsida extends AppCompatActivity {
     public Qude myQude;
@@ -22,10 +25,21 @@ public class Startsida extends AppCompatActivity {
     public void openAddQuestion(View v){
         setContentView(R.layout.add_questionpage);
     }
-    public void openQuestion(View v){
-        setContentView(R.layout.questionpage);
-        TextView textViewer = findViewById(R.id.textView3);
-        textViewer.setText(myQude.getQuestion().concat(Integer.toString(myQude.getRandomNumber())));
+    public void openQuestion(View v) {
+        if(myQude.getI() != 0){
+            setContentView(R.layout.questionpage);
+            TextView textViewer = findViewById(R.id.textView3);
+            textViewer.setText(myQude.getQuestion().concat(Integer.toString(myQude.getRandomNumber())));
+        }
+        else{
+            setContentView(R.layout.questionpage);
+            TextView textViewer = findViewById(R.id.textView3);
+            textViewer.setText("Inga frågor gå tillbaka?");
+            Button buttonChangeText = findViewById(R.id.button4);
+            buttonChangeText.setVisibility(View.VISIBLE);
+            Button buttonChangeVisible = findViewById(R.id.button9);
+            buttonChangeVisible.setVisibility(View.GONE);
+        }
     }
     public void openInfo(View v) {
         v.setBackgroundResource(R.color.colorPrimaryDark);
@@ -41,14 +55,28 @@ public class Startsida extends AppCompatActivity {
             myQude.addQuestion(new Question(textWriter.getText().toString()));
             textWriter.setText("Du har lagt till en fråga");
         }
+        else{
+            Dialog dialog = new Dialog(this);
+            dialog.setTitle(R.string.app_name);
+            dialog.show();
+        }
 
     }
     public void next_question(View v) {
-        myQude.removeQuestion();
-        TextView textViewer = findViewById(R.id.textView3);
-        textViewer.setText(myQude.getQuestion().concat(Integer.toString(myQude.getRandomNumber())));
-        Button buttonChangeText = findViewById(R.id.button4);
-        buttonChangeText.setText(getResources().getString(R.string.new_game));
+        if(myQude.getI() > 1) {
+            myQude.removeQuestion();
+            TextView textViewer = findViewById(R.id.textView3);
+            textViewer.setText(myQude.getQuestion().concat(Integer.toString(myQude.getRandomNumber())));
+        }
+        else{
+            myQude.removeQuestion();
+            TextView textViewer = findViewById(R.id.textView3);
+            textViewer.setText(R.string.text_end);
+            Button buttonChangeText = findViewById(R.id.button4);
+            buttonChangeText.setVisibility(View.VISIBLE);
+            Button buttonChangeVisible = findViewById(R.id.button9);
+            buttonChangeVisible.setVisibility(View.GONE);
+        }
     }
 
 }
