@@ -2,6 +2,7 @@ package com.example.student.pandoras;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,6 +16,7 @@ public class Startsida extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         myQude = new Qude();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.startsida);
     }
@@ -35,8 +37,8 @@ public class Startsida extends AppCompatActivity {
             setContentView(R.layout.questionpage);
             TextView textViewer = findViewById(R.id.textView3);
             textViewer.setText("Inga frågor gå tillbaka?");
-            Button buttonChangeText = findViewById(R.id.button4);
-            buttonChangeText.setVisibility(View.VISIBLE);
+            //Button buttonChangeText = findViewById(R.id.button4);
+            //buttonChangeText.setVisibility(View.VISIBLE);
             Button buttonChangeVisible = findViewById(R.id.button9);
             buttonChangeVisible.setVisibility(View.GONE);
         }
@@ -44,17 +46,14 @@ public class Startsida extends AppCompatActivity {
     public void openInfo(View v) {
         v.setBackgroundResource(R.color.colorPrimaryDark);
     }
-    public void clean(View v) {
-        EditText text = findViewById(R.id.editText);
-        text.setText("");
-    }
 
     public void add_question(View v){
         EditText textWriter = findViewById(R.id.editText);
 
         if(!textWriter.getText().toString().isEmpty()){
             myQude.addQuestion(new Question(textWriter.getText().toString()));
-            textWriter.setText("Du har lagt till en fråga");
+            textWriter.setText("");
+            textWriter.setHint("Lägg till en ny fråga");
         }
         else{
             // 1. Instantiate an AlertDialog.Builder with its constructor
@@ -84,8 +83,8 @@ public class Startsida extends AppCompatActivity {
             myQude.removeQuestion();
             TextView textViewer = findViewById(R.id.textView3);
             textViewer.setText(R.string.text_end);
-            Button buttonChangeText = findViewById(R.id.button4);
-            buttonChangeText.setVisibility(View.VISIBLE);
+            //Button buttonChangeText = findViewById(R.id.button4);
+            //buttonChangeText.setVisibility(View.VISIBLE);
             Button buttonChangeVisible = findViewById(R.id.button9);
             buttonChangeVisible.setVisibility(View.GONE);
         }
