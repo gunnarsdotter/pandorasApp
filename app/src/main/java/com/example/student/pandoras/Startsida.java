@@ -61,7 +61,7 @@ public class Startsida extends AppCompatActivity {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
             // 2. Chain together various setter methods to set the dialog characteristics
-                builder.setMessage(R.string.play).setTitle(R.string.app_name);
+                builder.setMessage(R.string.aleart_text).setTitle(R.string.alert_rubric);
 
             builder.setPositiveButton(R.string.alert_button, new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface dialog, int id) { }
