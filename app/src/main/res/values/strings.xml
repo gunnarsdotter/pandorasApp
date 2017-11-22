@@ -9,6 +9,9 @@
     <string name="textbox_question">Ställ en fråga...</string>
     <string name="add_question">Lägg till fråga</string>
     <string name="start">Starta!</string>
+    <string name="alert_rubric">Du glömde skriva in en fråga</string>
+    <string name="aleart_text">Skriv in en fråga som till exempel ...</string>
+    <string name="alert_button">OK</string>
 
     //questionpage
     <string name="rubric_question">Fråga 1</string>

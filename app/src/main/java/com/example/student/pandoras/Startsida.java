@@ -1,7 +1,7 @@
 package com.example.student.pandoras;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
+import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -51,17 +51,29 @@ public class Startsida extends AppCompatActivity {
 
     public void add_question(View v){
         EditText textWriter = findViewById(R.id.editText);
-        if(textWriter.getText().toString() != ""){
+
+        if(!textWriter.getText().toString().isEmpty()){
             myQude.addQuestion(new Question(textWriter.getText().toString()));
             textWriter.setText("Du har lagt till en fråga");
         }
         else{
-            Dialog dialog = new Dialog(this);
-            dialog.setTitle(R.string.app_name);
-            dialog.show();
+            // 1. Instantiate an AlertDialog.Builder with its constructor
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+            // 2. Chain together various setter methods to set the dialog characteristics
+                builder.setMessage(R.string.play).setTitle(R.string.app_name);
+
+            builder.setPositiveButton(R.string.alert_button, new DialogInterface.OnClickListener() {
+                public void onClick(DialogInterface dialog, int id) { }
+            });
+            // 3. Get the AlertDialog from create()
+                AlertDialog dialog = builder.create();
+
+                dialog.show();
         }
 
     }
+
     public void next_question(View v) {
         if(myQude.getI() > 1) {
             myQude.removeQuestion();
