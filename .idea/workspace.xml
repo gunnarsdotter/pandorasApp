@@ -45,14 +45,13 @@
       <file leaf-file-name="Startsida.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/student/pandoras/Startsida.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="69" column="54" lean-forward="false" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
+            <state relative-caret-position="310">
+              <caret line="63" column="74" lean-forward="false" selection-start-line="63" selection-start-column="74" selection-end-line="63" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#onCreate#0;class#Startsida#0" expanded="false" />
                 <element signature="method#clean#0;class#Startsida#0" expanded="false" />
                 <element signature="e#2331#2351#0" expanded="true" />
-                <element signature="e#2362#2383#0" expanded="true" />
                 <element signature="e#2425#2446#0" expanded="true" />
                 <element signature="e#3167#3184#0" expanded="true" />
               </folding>
@@ -2262,7 +2261,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511349423007" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511350058450" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2310,7 +2309,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511349423007" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511350058450" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2493,7 +2492,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511349423011" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511350058452" />
       </method>
     </configuration>
     <list size="1">
@@ -2634,7 +2633,6 @@
             <element signature="method#onCreate#0;class#Startsida#0" expanded="false" />
             <element signature="method#clean#0;class#Startsida#0" expanded="false" />
             <element signature="e#2331#2351#0" expanded="true" />
-            <element signature="e#2362#2383#0" expanded="true" />
             <element signature="e#2425#2446#0" expanded="true" />
             <element signature="e#3167#3184#0" expanded="true" />
           </folding>
@@ -2661,7 +2659,6 @@
             <element signature="method#onCreate#0;class#Startsida#0" expanded="false" />
             <element signature="method#clean#0;class#Startsida#0" expanded="false" />
             <element signature="e#2331#2351#0" expanded="true" />
-            <element signature="e#2362#2383#0" expanded="true" />
             <element signature="e#2425#2446#0" expanded="true" />
             <element signature="e#3167#3184#0" expanded="true" />
           </folding>
@@ -2685,7 +2682,6 @@
             <element signature="method#onCreate#0;class#Startsida#0" expanded="false" />
             <element signature="method#clean#0;class#Startsida#0" expanded="false" />
             <element signature="e#2331#2351#0" expanded="true" />
-            <element signature="e#2362#2383#0" expanded="true" />
             <element signature="e#2425#2446#0" expanded="true" />
             <element signature="e#3167#3184#0" expanded="true" />
           </folding>
@@ -2796,7 +2792,6 @@
             <element signature="method#onCreate#0;class#Startsida#0" expanded="false" />
             <element signature="method#clean#0;class#Startsida#0" expanded="false" />
             <element signature="e#2331#2351#0" expanded="true" />
-            <element signature="e#2362#2383#0" expanded="true" />
             <element signature="e#2425#2446#0" expanded="true" />
             <element signature="e#3167#3184#0" expanded="true" />
           </folding>
@@ -2860,7 +2855,6 @@
             <element signature="method#onCreate#0;class#Startsida#0" expanded="false" />
             <element signature="method#clean#0;class#Startsida#0" expanded="false" />
             <element signature="e#2331#2351#0" expanded="true" />
-            <element signature="e#2362#2383#0" expanded="true" />
             <element signature="e#2425#2446#0" expanded="true" />
             <element signature="e#3167#3184#0" expanded="true" />
           </folding>
@@ -2887,7 +2881,6 @@
             <element signature="method#onCreate#0;class#Startsida#0" expanded="false" />
             <element signature="method#clean#0;class#Startsida#0" expanded="false" />
             <element signature="e#2331#2351#0" expanded="true" />
-            <element signature="e#2362#2383#0" expanded="true" />
             <element signature="e#2425#2446#0" expanded="true" />
             <element signature="e#3167#3184#0" expanded="true" />
           </folding>
@@ -3056,14 +3049,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/student/pandoras/Startsida.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="69" column="54" lean-forward="false" selection-start-line="69" selection-start-column="54" selection-end-line="69" selection-end-column="54" />
+        <state relative-caret-position="310">
+          <caret line="63" column="74" lean-forward="false" selection-start-line="63" selection-start-column="74" selection-end-line="63" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#Startsida#0" expanded="false" />
             <element signature="method#clean#0;class#Startsida#0" expanded="false" />
             <element signature="e#2331#2351#0" expanded="true" />
-            <element signature="e#2362#2383#0" expanded="true" />
             <element signature="e#2425#2446#0" expanded="true" />
             <element signature="e#3167#3184#0" expanded="true" />
           </folding>
