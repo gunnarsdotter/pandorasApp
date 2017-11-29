@@ -11,10 +11,13 @@ public class Qude {
 
     private ArrayList<Question> questionList;
     private int randomNumber;
+    private int questionLast;
 
 
     public Qude(){
+        questionLast = 1;
         questionList = new ArrayList<Question>();
+
     }
     //addquestion
     public void addQuestion(Question quest){
@@ -37,5 +40,14 @@ public class Qude {
         return randomNumber;
     }
     public int getI(){return questionList.size();}
+    public void increas(){
+        questionLast++;
+    }
+    public int getNumber(){
+        return questionLast;
+    }
+    public void setNumber(int i){
+        questionLast = i;
+    }
 }
 

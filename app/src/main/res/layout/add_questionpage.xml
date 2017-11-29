@@ -5,20 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:layout_editor_absoluteY="81dp"
-    android:background="@drawable/bg">
+    android:background="@drawable/bg"
+    android:onClick="hideKeybord">
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_marginBottom="230dp"
-        android:contextClickable="false"
+        android:contextClickable="true"
         android:ems="10"
         android:hint="@string/textbox_question"
         android:inputType="textMultiLine"
-        android:onClick="bottomChange"
-        android:selectAllOnFocus="false"
-        android:singleLine="false"
+
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:fontFamily="@font/pandora_font"
+        android:imeOptions="actionSend"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"

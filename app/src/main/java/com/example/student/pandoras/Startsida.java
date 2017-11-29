@@ -1,11 +1,18 @@
 package com.example.student.pandoras;
 
+import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -18,47 +25,67 @@ public class Startsida extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         myQude = new Qude();
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.startsida);
-    }
 
+    }
     public void openStartsida(View v){
         setContentView(R.layout.startsida);
     }
-    public void openAddQuestion(View v){
+    public void openAddQuestion(final View v){
         setContentView(R.layout.add_questionpage);
-        Button buttonChange = findViewById(R.id.button6);
+        final Button buttonChange = findViewById(R.id.button6);
         buttonChange.setEnabled(false);
         buttonChange.setBackgroundResource(R.drawable.laggtillfragagra);
         Button buttonChange2 = findViewById(R.id.button7);
+        buttonChange2.setBackgroundResource(R.drawable.oppnakistangra);
         buttonChange2.setEnabled(false);
+
+        EditText editText = findViewById(R.id.editText);
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                bottomChange(v);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
     }
     public void openQuestion(View v) {
         if(myQude.getI() != 0){
             setContentView(R.layout.questionpage);
             TextView textViewer = findViewById(R.id.textView3);
-            textViewer.setText(myQude.getQuestion().concat(Integer.toString(myQude.getRandomNumber())));
+            textViewer.setText(myQude.getQuestion());
+
         }
-        else{
+       /* else{
             //TextView textViewer = findViewById(R.id.textView3);
             //textViewer.setText("Inga frågor gå tillbaka?");
             //Button buttonChangeText = findViewById(R.id.button4);
             //buttonChangeText.setVisibility(View.VISIBLE);
-        }
+        }*/
     }
     public void openInfo1(View v) {
         // 1. Instantiate an AlertDialog.Builder with its constructor
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         // 2. Chain together various setter methods to set the dialog characteristics
         builder.setMessage(R.string.alert_info_text1).setTitle(R.string.alert_info);
-
         builder.setPositiveButton(R.string.alert_button, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) { }
         });
+
         // 3. Get the AlertDialog from create()
         AlertDialog dialog = builder.create();
         dialog.show();
+
     }
     public void openInfo2(View v) {
         // 1. Instantiate an AlertDialog.Builder with its constructor
@@ -87,11 +114,11 @@ public class Startsida extends AppCompatActivity {
         dialog.show();
     }
 
-
     public void bottomChange(View v){
         Button buttonChange = findViewById(R.id.button6);
         buttonChange.setBackgroundResource(R.drawable.laggtillfraga);
         buttonChange.setEnabled(true);
+       // getKeybord();
     }
     public void add_question(View v){
         EditText textWriter = findViewById(R.id.editText);
@@ -100,6 +127,8 @@ public class Startsida extends AppCompatActivity {
             textWriter.setText("");
             textWriter.setHint("Lägg till en ny fråga");
             Button buttonChange = findViewById(R.id.button7);
+            //Om man vill ha en ny bakgrundsbild när man har lagt till en fråga. Glöm inte att sätta de som ändring när man öppnar sidan. (open add_question)
+            buttonChange.setBackgroundResource(R.drawable.oppnakistan);
             buttonChange.setEnabled(true);
 
         }
@@ -124,17 +153,34 @@ public class Startsida extends AppCompatActivity {
         if(myQude.getI() > 1) {
             myQude.removeQuestion();
             TextView textViewer = findViewById(R.id.textView3);
-            textViewer.setText(myQude.getQuestion().concat(Integer.toString(myQude.getRandomNumber())));
+            textViewer.setText(myQude.getQuestion());
+
+            myQude.increas();
+            TextView rubric = findViewById(R.id.textView);
+            rubric.setText("Fråga ".concat(Integer.toString(myQude.getNumber())));
         }
         else{
             myQude.removeQuestion();
             TextView textViewer = findViewById(R.id.textView3);
             textViewer.setText(R.string.text_end);
+            myQude.setNumber(1);
+
+            TextView rubric = findViewById(R.id.textView);
+            rubric.setText(" ");
             //Button buttonChangeText = findViewById(R.id.button4);
             //buttonChangeText.setVisibility(View.VISIBLE);
             Button buttonChangeVisible = findViewById(R.id.button9);
             buttonChangeVisible.setVisibility(View.GONE);
         }
+    }
+
+    public void getKeybord(){
+        InputMethodManager im = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        im.toggleSoftInput( InputMethodManager.SHOW_FORCED, 0);
+    }
+    public void hideKeybord(View v){
+        InputMethodManager im = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+        im.hideSoftInputFromWindow(v.getWindowToken(), 0);
     }
 
 }
