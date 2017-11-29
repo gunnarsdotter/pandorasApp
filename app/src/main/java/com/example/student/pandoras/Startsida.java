@@ -17,6 +17,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+
 import static com.example.student.pandoras.R.drawable.laggtillfraga;
 
 
@@ -58,6 +59,7 @@ public class Startsida extends AppCompatActivity {
 
             }
         });
+
     }
     public void openQuestion(View v) {
         if(myQude.getI() != 0){

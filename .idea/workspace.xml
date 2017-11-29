@@ -51,30 +51,31 @@
       <file leaf-file-name="Startsida.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/student/pandoras/Startsida.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="454">
-              <caret line="165" column="30" lean-forward="false" selection-start-line="165" selection-start-column="30" selection-end-line="165" selection-end-column="30" />
+            <state relative-caret-position="612">
+              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#onCreate#0;class#Startsida#0" expanded="false" />
-                <element signature="method#openAddQuestion#0;class#Startsida#0" expanded="false" />
+                <element signature="method#openQuestion#0;class#Startsida#0" expanded="false" />
                 <element signature="method#openInfo1#0;class#Startsida#0" expanded="false" />
-                <element signature="e#2824#2849#0" expanded="true" />
-                <element signature="e#2860#2879#0" expanded="true" />
-                <element signature="e#2916#2937#0" expanded="true" />
+                <element signature="e#2826#2851#0" expanded="true" />
+                <element signature="e#2862#2881#0" expanded="true" />
+                <element signature="e#2918#2939#0" expanded="true" />
                 <element signature="method#openInfo2#0;class#Startsida#0" expanded="false" />
-                <element signature="e#3473#3498#0" expanded="true" />
-                <element signature="e#3509#3528#0" expanded="true" />
-                <element signature="e#3566#3587#0" expanded="true" />
+                <element signature="e#3475#3500#0" expanded="true" />
+                <element signature="e#3511#3530#0" expanded="true" />
+                <element signature="e#3568#3589#0" expanded="true" />
                 <element signature="method#openInfo3#0;class#Startsida#0" expanded="false" />
-                <element signature="e#4121#4146#0" expanded="true" />
-                <element signature="e#4157#4176#0" expanded="true" />
-                <element signature="e#4214#4235#0" expanded="true" />
+                <element signature="e#4123#4148#0" expanded="true" />
+                <element signature="e#4159#4178#0" expanded="true" />
+                <element signature="e#4216#4237#0" expanded="true" />
                 <element signature="method#bottomChange#0;class#Startsida#0" expanded="false" />
                 <element signature="method#add_question#0;class#Startsida#0" expanded="false" />
-                <element signature="e#5675#5695#0" expanded="true" />
-                <element signature="e#5706#5727#0" expanded="true" />
-                <element signature="e#5769#5790#0" expanded="true" />
-                <element signature="e#6632#6649#0" expanded="true" />
+                <element signature="e#5677#5697#0" expanded="true" />
+                <element signature="e#5708#5729#0" expanded="true" />
+                <element signature="e#5771#5792#0" expanded="true" />
+                <element signature="method#next_question#0;class#Startsida#0" expanded="false" />
+                <element signature="e#6634#6651#0" expanded="true" />
                 <element signature="method#getKeybord#0;class#Startsida#0" expanded="false" />
                 <element signature="method#hideKeybord#0;class#Startsida#0" expanded="false" />
               </folding>
@@ -82,18 +83,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_questionpage.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_questionpage.xml">
+      <file leaf-file-name="startsida.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/startsida.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="797">
+              <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add_questionpage.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_questionpage.xml">
+          <provider selected="true" editor-type-id="android-designer2">
+            <state />
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="323">
               <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
-                <element signature="e#705#731#0" expanded="true" />
+                <element signature="e#265#283#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
           </provider>
         </entry>
       </file>
@@ -109,32 +136,13 @@
       </file>
       <file leaf-file-name="questionpage.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/questionpage.xml">
-          <provider editor-type-id="android-designer2">
+          <provider selected="true" editor-type-id="android-designer2">
             <state />
           </provider>
-          <provider selected="true" editor-type-id="text-editor">
+          <provider editor-type-id="text-editor">
             <state relative-caret-position="321">
-              <caret line="69" column="45" lean-forward="false" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+              <caret line="68" column="45" lean-forward="false" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Qude.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/student/pandoras/Qude.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-              <folding>
-                <element signature="e#839#840#0" expanded="true" />
-                <element signature="e#874#875#0" expanded="true" />
-                <element signature="e#952#953#0" expanded="true" />
-                <element signature="e#982#983#0" expanded="true" />
-                <element signature="e#1010#1011#0" expanded="true" />
-                <element signature="e#1045#1046#0" expanded="true" />
-                <element signature="e#1079#1080#0" expanded="true" />
-                <element signature="e#1111#1112#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -1873,17 +1881,17 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/student/pandoras/question.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/student/pandoras/Question.java" />
         <option value="$USER_HOME$/AppData/Local/Android/sdk/platforms/android-26/android.jar!/java/util/ArrayList.class" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/drawable/bakgrunder.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/startsida.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/font/font.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/font.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/student/pandoras/Qude.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/student/pandoras/Startsida.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/startsida.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/add_questionpage.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/questionpage.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/student/pandoras/Startsida.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/student/pandoras/Qude.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       </list>
     </option>
   </component>
@@ -2072,6 +2080,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="font" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pandoras" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Pandoras" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2320,7 +2358,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511971947460" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511986282447" />
       </method>
     </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Instrumented Tests">
@@ -2368,7 +2406,7 @@
       </Profilers>
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511971947460" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511986282448" />
       </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -2551,7 +2589,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <method>
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511971947461" />
+        <option name="com.android.instantApps.provision.BeforeRunTask" enabled="true" clearCache="false" clearProvisionedDevices="false" myTimestamp="1511986282449" />
       </method>
     </configuration>
     <list size="1">
@@ -2683,14 +2721,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/startsida.xml">
       <provider selected="true" editor-type-id="android-designer2">
         <state />
@@ -2709,25 +2739,26 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#Startsida#0" expanded="false" />
-            <element signature="method#openAddQuestion#0;class#Startsida#0" expanded="false" />
+            <element signature="method#openQuestion#0;class#Startsida#0" expanded="false" />
             <element signature="method#openInfo1#0;class#Startsida#0" expanded="false" />
-            <element signature="e#2824#2849#0" expanded="true" />
-            <element signature="e#2860#2879#0" expanded="true" />
-            <element signature="e#2916#2937#0" expanded="true" />
+            <element signature="e#2826#2851#0" expanded="true" />
+            <element signature="e#2862#2881#0" expanded="true" />
+            <element signature="e#2918#2939#0" expanded="true" />
             <element signature="method#openInfo2#0;class#Startsida#0" expanded="false" />
-            <element signature="e#3473#3498#0" expanded="true" />
-            <element signature="e#3509#3528#0" expanded="true" />
-            <element signature="e#3566#3587#0" expanded="true" />
+            <element signature="e#3475#3500#0" expanded="true" />
+            <element signature="e#3511#3530#0" expanded="true" />
+            <element signature="e#3568#3589#0" expanded="true" />
             <element signature="method#openInfo3#0;class#Startsida#0" expanded="false" />
-            <element signature="e#4121#4146#0" expanded="true" />
-            <element signature="e#4157#4176#0" expanded="true" />
-            <element signature="e#4214#4235#0" expanded="true" />
+            <element signature="e#4123#4148#0" expanded="true" />
+            <element signature="e#4159#4178#0" expanded="true" />
+            <element signature="e#4216#4237#0" expanded="true" />
             <element signature="method#bottomChange#0;class#Startsida#0" expanded="false" />
             <element signature="method#add_question#0;class#Startsida#0" expanded="false" />
-            <element signature="e#5675#5695#0" expanded="true" />
-            <element signature="e#5706#5727#0" expanded="true" />
-            <element signature="e#5769#5790#0" expanded="true" />
-            <element signature="e#6632#6649#0" expanded="true" />
+            <element signature="e#5677#5697#0" expanded="true" />
+            <element signature="e#5708#5729#0" expanded="true" />
+            <element signature="e#5771#5792#0" expanded="true" />
+            <element signature="method#next_question#0;class#Startsida#0" expanded="false" />
+            <element signature="e#6634#6651#0" expanded="true" />
             <element signature="method#getKeybord#0;class#Startsida#0" expanded="false" />
             <element signature="method#hideKeybord#0;class#Startsida#0" expanded="false" />
           </folding>
@@ -2741,9 +2772,7 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
-          <folding>
-            <element signature="e#705#731#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2791,25 +2820,26 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#Startsida#0" expanded="false" />
-            <element signature="method#openAddQuestion#0;class#Startsida#0" expanded="false" />
+            <element signature="method#openQuestion#0;class#Startsida#0" expanded="false" />
             <element signature="method#openInfo1#0;class#Startsida#0" expanded="false" />
-            <element signature="e#2824#2849#0" expanded="true" />
-            <element signature="e#2860#2879#0" expanded="true" />
-            <element signature="e#2916#2937#0" expanded="true" />
+            <element signature="e#2826#2851#0" expanded="true" />
+            <element signature="e#2862#2881#0" expanded="true" />
+            <element signature="e#2918#2939#0" expanded="true" />
             <element signature="method#openInfo2#0;class#Startsida#0" expanded="false" />
-            <element signature="e#3473#3498#0" expanded="true" />
-            <element signature="e#3509#3528#0" expanded="true" />
-            <element signature="e#3566#3587#0" expanded="true" />
+            <element signature="e#3475#3500#0" expanded="true" />
+            <element signature="e#3511#3530#0" expanded="true" />
+            <element signature="e#3568#3589#0" expanded="true" />
             <element signature="method#openInfo3#0;class#Startsida#0" expanded="false" />
-            <element signature="e#4121#4146#0" expanded="true" />
-            <element signature="e#4157#4176#0" expanded="true" />
-            <element signature="e#4214#4235#0" expanded="true" />
+            <element signature="e#4123#4148#0" expanded="true" />
+            <element signature="e#4159#4178#0" expanded="true" />
+            <element signature="e#4216#4237#0" expanded="true" />
             <element signature="method#bottomChange#0;class#Startsida#0" expanded="false" />
             <element signature="method#add_question#0;class#Startsida#0" expanded="false" />
-            <element signature="e#5675#5695#0" expanded="true" />
-            <element signature="e#5706#5727#0" expanded="true" />
-            <element signature="e#5769#5790#0" expanded="true" />
-            <element signature="e#6632#6649#0" expanded="true" />
+            <element signature="e#5677#5697#0" expanded="true" />
+            <element signature="e#5708#5729#0" expanded="true" />
+            <element signature="e#5771#5792#0" expanded="true" />
+            <element signature="method#next_question#0;class#Startsida#0" expanded="false" />
+            <element signature="e#6634#6651#0" expanded="true" />
             <element signature="method#getKeybord#0;class#Startsida#0" expanded="false" />
             <element signature="method#hideKeybord#0;class#Startsida#0" expanded="false" />
           </folding>
@@ -2834,25 +2864,26 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#onCreate#0;class#Startsida#0" expanded="false" />
-            <element signature="method#openAddQuestion#0;class#Startsida#0" expanded="false" />
+            <element signature="method#openQuestion#0;class#Startsida#0" expanded="false" />
             <element signature="method#openInfo1#0;class#Startsida#0" expanded="false" />
-            <element signature="e#2824#2849#0" expanded="true" />
-            <element signature="e#2860#2879#0" expanded="true" />
-            <element signature="e#2916#2937#0" expanded="true" />
+            <element signature="e#2826#2851#0" expanded="true" />
+            <element signature="e#2862#2881#0" expanded="true" />
+            <element signature="e#2918#2939#0" expanded="true" />
             <element signature="method#openInfo2#0;class#Startsida#0" expanded="false" />
-            <element signature="e#3473#3498#0" expanded="true" />
-            <element signature="e#3509#3528#0" expanded="true" />
-            <element signature="e#3566#3587#0" expanded="true" />
+            <element signature="e#3475#3500#0" expanded="true" />
+            <element signature="e#3511#3530#0" expanded="true" />
+            <element signature="e#3568#3589#0" expanded="true" />
             <element signature="method#openInfo3#0;class#Startsida#0" expanded="false" />
-            <element signature="e#4121#4146#0" expanded="true" />
-            <element signature="e#4157#4176#0" expanded="true" />
-            <element signature="e#4214#4235#0" expanded="true" />
+            <element signature="e#4123#4148#0" expanded="true" />
+            <element signature="e#4159#4178#0" expanded="true" />
+            <element signature="e#4216#4237#0" expanded="true" />
             <element signature="method#bottomChange#0;class#Startsida#0" expanded="false" />
             <element signature="method#add_question#0;class#Startsida#0" expanded="false" />
-            <element signature="e#5675#5695#0" expanded="true" />
-            <element signature="e#5706#5727#0" expanded="true" />
-            <element signature="e#5769#5790#0" expanded="true" />
-            <element signature="e#6632#6649#0" expanded="true" />
+            <element signature="e#5677#5697#0" expanded="true" />
+            <element signature="e#5708#5729#0" expanded="true" />
+            <element signature="e#5771#5792#0" expanded="true" />
+            <element signature="method#next_question#0;class#Startsida#0" expanded="false" />
+            <element signature="e#6634#6651#0" expanded="true" />
             <element signature="method#getKeybord#0;class#Startsida#0" expanded="false" />
             <element signature="method#hideKeybord#0;class#Startsida#0" expanded="false" />
           </folding>
@@ -2916,14 +2947,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bilder.xml" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/spela.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -2952,21 +2975,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ask2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/student/pandoras/Question.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml">
@@ -3021,17 +3034,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/font.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -3043,17 +3045,6 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/res/font/pandora_font.ttf">
       <provider selected="true" editor-type-id="fontseditor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/startsida.xml">
-      <provider selected="true" editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="43" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/values/colors.xml">
@@ -3075,14 +3066,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/questionpage.xml">
-      <provider editor-type-id="android-designer2">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/student/pandoras/Qude.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" column="20" lean-forward="true" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding>
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#874#875#0" expanded="true" />
+            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#982#983#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1045#1046#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/bg.png">
+      <provider selected="true" editor-type-id="images">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/oppnakistangra.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/ask2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="69" column="45" lean-forward="false" selection-start-line="69" selection-start-column="45" selection-end-line="69" selection-end-column="45" />
+        <state relative-caret-position="272">
+          <caret line="16" column="66" lean-forward="false" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/student/pandoras/Startsida.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onCreate#0;class#Startsida#0" expanded="false" />
+            <element signature="method#openQuestion#0;class#Startsida#0" expanded="false" />
+            <element signature="method#openInfo1#0;class#Startsida#0" expanded="false" />
+            <element signature="e#2826#2851#0" expanded="true" />
+            <element signature="e#2862#2881#0" expanded="true" />
+            <element signature="e#2918#2939#0" expanded="true" />
+            <element signature="method#openInfo2#0;class#Startsida#0" expanded="false" />
+            <element signature="e#3475#3500#0" expanded="true" />
+            <element signature="e#3511#3530#0" expanded="true" />
+            <element signature="e#3568#3589#0" expanded="true" />
+            <element signature="method#openInfo3#0;class#Startsida#0" expanded="false" />
+            <element signature="e#4123#4148#0" expanded="true" />
+            <element signature="e#4159#4178#0" expanded="true" />
+            <element signature="e#4216#4237#0" expanded="true" />
+            <element signature="method#bottomChange#0;class#Startsida#0" expanded="false" />
+            <element signature="method#add_question#0;class#Startsida#0" expanded="false" />
+            <element signature="e#5677#5697#0" expanded="true" />
+            <element signature="e#5708#5729#0" expanded="true" />
+            <element signature="e#5771#5792#0" expanded="true" />
+            <element signature="method#next_question#0;class#Startsida#0" expanded="false" />
+            <element signature="e#6634#6651#0" expanded="true" />
+            <element signature="method#getKeybord#0;class#Startsida#0" expanded="false" />
+            <element signature="method#hideKeybord#0;class#Startsida#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -3095,65 +3148,49 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/add_questionpage.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/questionpage.xml">
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="68" column="45" lean-forward="false" selection-start-line="68" selection-start-column="45" selection-end-line="68" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/startsida.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#705#731#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="797">
+          <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/student/pandoras/Startsida.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="165" column="30" lean-forward="false" selection-start-line="165" selection-start-column="30" selection-end-line="165" selection-end-column="30" />
+        <state relative-caret-position="323">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#onCreate#0;class#Startsida#0" expanded="false" />
-            <element signature="method#openAddQuestion#0;class#Startsida#0" expanded="false" />
-            <element signature="method#openInfo1#0;class#Startsida#0" expanded="false" />
-            <element signature="e#2824#2849#0" expanded="true" />
-            <element signature="e#2860#2879#0" expanded="true" />
-            <element signature="e#2916#2937#0" expanded="true" />
-            <element signature="method#openInfo2#0;class#Startsida#0" expanded="false" />
-            <element signature="e#3473#3498#0" expanded="true" />
-            <element signature="e#3509#3528#0" expanded="true" />
-            <element signature="e#3566#3587#0" expanded="true" />
-            <element signature="method#openInfo3#0;class#Startsida#0" expanded="false" />
-            <element signature="e#4121#4146#0" expanded="true" />
-            <element signature="e#4157#4176#0" expanded="true" />
-            <element signature="e#4214#4235#0" expanded="true" />
-            <element signature="method#bottomChange#0;class#Startsida#0" expanded="false" />
-            <element signature="method#add_question#0;class#Startsida#0" expanded="false" />
-            <element signature="e#5675#5695#0" expanded="true" />
-            <element signature="e#5706#5727#0" expanded="true" />
-            <element signature="e#5769#5790#0" expanded="true" />
-            <element signature="e#6632#6649#0" expanded="true" />
-            <element signature="method#getKeybord#0;class#Startsida#0" expanded="false" />
-            <element signature="method#hideKeybord#0;class#Startsida#0" expanded="false" />
+            <element signature="e#265#283#0" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/student/pandoras/Qude.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1045#1046#0" expanded="true" />
-            <element signature="e#1079#1080#0" expanded="true" />
-            <element signature="e#1111#1112#0" expanded="true" />
-          </folding>
-        </state>
+      <provider editor-type-id="android-manifest">
+        <state />
       </provider>
     </entry>
   </component>
