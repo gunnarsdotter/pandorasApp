@@ -4,21 +4,22 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.TextView.OnEditorActionListener;
 
-
-import static com.example.student.pandoras.R.drawable.laggtillfraga;
 
 
 public class Startsida extends AppCompatActivity {
@@ -28,7 +29,6 @@ public class Startsida extends AppCompatActivity {
         myQude = new Qude();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.startsida);
-
     }
     public void openStartsida(View v){
         setContentView(R.layout.startsida);
@@ -42,7 +42,7 @@ public class Startsida extends AppCompatActivity {
         buttonChange2.setBackgroundResource(R.drawable.oppnakistangra);
         buttonChange2.setEnabled(false);
 
-        EditText editText = findViewById(R.id.editText);
+        final EditText editText = findViewById(R.id.editText);
         editText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -59,8 +59,19 @@ public class Startsida extends AppCompatActivity {
 
             }
         });
-
+        //Enter funkar om knappen är enter så i visa fall
+        editText.setOnKeyListener(new View.OnKeyListener() {
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (event.getAction() == KeyEvent.ACTION_DOWN)
+                    if ((keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                        add_question(v);
+                        return true;
+                    }
+                return false;
+            }
+        });
     }
+
     public void openQuestion(View v) {
         if(myQude.getI() != 0){
             setContentView(R.layout.questionpage);
@@ -115,6 +126,7 @@ public class Startsida extends AppCompatActivity {
         AlertDialog dialog = builder.create();
         dialog.show();
     }
+
 
     public void bottomChange(View v){
         Button buttonChange = findViewById(R.id.button6);
@@ -172,7 +184,22 @@ public class Startsida extends AppCompatActivity {
             //Button buttonChangeText = findViewById(R.id.button4);
             //buttonChangeText.setVisibility(View.VISIBLE);
             Button buttonChangeVisible = findViewById(R.id.button9);
-            buttonChangeVisible.setVisibility(View.GONE);
+            buttonChangeVisible.setBackgroundResource(R.drawable.spelanyrunda);
+            buttonChangeVisible.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    openAddQuestion(view);
+                }
+            });
+            //buttonChangeVisible.setVisibility(View.GONE);
+            Button buttonchangeble = findViewById(R.id.button5);
+            buttonchangeble.setBackgroundResource(R.drawable.huvudmeny);
+            buttonchangeble.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    openStartsida(view);
+                }
+            });
         }
     }
 
@@ -183,6 +210,51 @@ public class Startsida extends AppCompatActivity {
     public void hideKeybord(View v){
         InputMethodManager im = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
         im.hideSoftInputFromWindow(v.getWindowToken(), 0);
+
+    }
+
+
+    public void laggTill(View v){
+        //öppna add_question
+        setContentView(R.layout.add_questionpage);
+        //sätter knapparna enabel
+        /*final Button buttonChange = findViewById(R.id.button6);
+        buttonChange.setEnabled(false);
+        buttonChange.setBackgroundResource(R.drawable.laggtillfragagra);
+        Button buttonChange2 = findViewById(R.id.button7);
+        buttonChange2.setBackgroundResource(R.drawable.oppnakistangra);
+        buttonChange2.setEnabled(false);*/
+        //Sätter att skrivbordet skulle upp
+        bottomChange(v);
+        bottomChange(v);
+        final EditText editText = findViewById(R.id.editText);
+        editText.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                //bottomChange(v);
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+            }
+        });
+        //Enter funkar om knappen är enter så i visa fall
+        editText.setOnKeyListener(new View.OnKeyListener() {
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (event.getAction() == KeyEvent.ACTION_DOWN)
+                    if ((keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER)) {
+                        add_question(v);
+                        return true;
+                    }
+                return false;
+            }
+        });
     }
 
 }

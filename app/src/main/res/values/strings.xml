@@ -20,7 +20,7 @@
     <string name="question">Vem är du?</string>
     <string name="next_question">Nästa fråga</string>
     <string name="rubric_end">Rundan är slut!</string>
-    <string name="text_end">Spela en ny runda med nya frågor!</string>
+    <string name="text_end">Kistan är tom!</string>
     <string name="new_game">Spela en ny runda</string>
     <string name="main">Huvudmeny</string>
 
