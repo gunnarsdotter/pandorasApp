@@ -20,7 +20,6 @@
         android:ems="10"
         android:fontFamily="sans-serif"
         android:hint="@string/textbox_question"
-        android:imeOptions="actionDone"
         android:inputType="textMultiLine"
         android:selectAllOnFocus="true"
         android:singleLine="true"

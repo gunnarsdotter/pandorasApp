@@ -19,6 +19,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
+import android.text.method.ScrollingMovementMethod;
 
 
 
@@ -29,6 +30,7 @@ public class Startsida extends AppCompatActivity {
         myQude = new Qude();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.startsida);
+
     }
     public void openStartsida(View v){
         setContentView(R.layout.startsida);
@@ -77,6 +79,7 @@ public class Startsida extends AppCompatActivity {
             setContentView(R.layout.questionpage);
             TextView textViewer = findViewById(R.id.textView3);
             textViewer.setText(myQude.getQuestion());
+            textViewer.setMovementMethod(new ScrollingMovementMethod());
 
         }
        /* else{
