@@ -32,7 +32,9 @@
         Skriv din fråga i textrutan och lägg till den i kistan genom att klicka på “lägg till fråga”. När ni är nöjda med antal frågor, klicka på “Öppna kistan”. Spelet har börjat!
     </string>
     <string name="alert_info_text3">När kistan öppnas kommer frågorna vara slumpade och första personen får svara på en fråga. När frågan har blivit besvarad, klicka på “Nästa fråga”. Om en spelare vill lägga till en fråga under rundan klicka på “Lägg till fråga”. När frågorna är slut är rundan över.</string>
-    <string name="alert_info_text4">Rundan är nu över och ni kan antingen gå tillbaka till huvudmenyn eller spela en ny runda. Om ni vill spela en till runda kommer ni få möjligheten att skriva in nya frågor till kistan.
-        Hoppas ni hade en bra omgång!
+    <string name="alert_info_text4">När kistan öppnas kommer frågorna vara slumpade och första personen får svara på en fråga. När frågan har blivit besvarad, klicka på “Nästa fråga”. Om en spelare vill lägga till en fråga under rundan klicka på “Lägg till fråga”. När frågorna är slut är rundan över.
+        När rundan är slut kan ni antingen gå tillbaka till huvudmenyn eller spela en ny runda. Hoppas ni hade en bra omgång!
+
     </string>
+    <string name="title_activity_add_quest">addQuest</string>
 </resources>

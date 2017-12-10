@@ -1,6 +1,5 @@
 package com.example.student.pandoras;
 
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -10,17 +9,12 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.TextView.OnEditorActionListener;
 import android.text.method.ScrollingMovementMethod;
-
 
 
 public class Startsida extends AppCompatActivity {
@@ -30,13 +24,17 @@ public class Startsida extends AppCompatActivity {
         myQude = new Qude();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.startsida);
+        final Button button = findViewById(R.id.button);
+        button.setBackgroundResource(R.drawable.spelaknapp);
 
     }
     public void openStartsida(View v){
         setContentView(R.layout.startsida);
     }
     public void openAddQuestion(final View v){
+
         setContentView(R.layout.add_questionpage);
+
         final Button buttonChange = findViewById(R.id.button6);
         buttonChange.setEnabled(false);
         buttonChange.setBackgroundResource(R.drawable.laggtillfragagra);
@@ -80,7 +78,11 @@ public class Startsida extends AppCompatActivity {
             TextView textViewer = findViewById(R.id.textView3);
             textViewer.setText(myQude.getQuestion());
             textViewer.setMovementMethod(new ScrollingMovementMethod());
+            final Button button = findViewById(R.id.button9);
+            button.setBackgroundResource(R.drawable.nastafragaknapp);   ///nästa fråga knapp
 
+            final Button button1 = findViewById(R.id.button5);
+            button1.setBackgroundResource(R.drawable.laggtrillfragaknapp);
         }
        /* else{
             //TextView textViewer = findViewById(R.id.textView3);
@@ -88,6 +90,7 @@ public class Startsida extends AppCompatActivity {
             //Button buttonChangeText = findViewById(R.id.button4);
             //buttonChangeText.setVisibility(View.VISIBLE);
         }*/
+
     }
     public void openInfo1(View v) {
         // 1. Instantiate an AlertDialog.Builder with its constructor
@@ -133,7 +136,7 @@ public class Startsida extends AppCompatActivity {
 
     public void bottomChange(View v){
         Button buttonChange = findViewById(R.id.button6);
-        buttonChange.setBackgroundResource(R.drawable.laggtillfraga);
+        buttonChange.setBackgroundResource(R.drawable.laggtrillfragaknapp);
         buttonChange.setEnabled(true);
        // getKeybord();
     }
@@ -145,7 +148,7 @@ public class Startsida extends AppCompatActivity {
             textWriter.setHint("Lägg till en ny fråga");
             Button buttonChange = findViewById(R.id.button7);
             //Om man vill ha en ny bakgrundsbild när man har lagt till en fråga. Glöm inte att sätta de som ändring när man öppnar sidan. (open add_question)
-            buttonChange.setBackgroundResource(R.drawable.oppnakistan);
+            buttonChange.setBackgroundResource(R.drawable.oppnakistanknapp);
             buttonChange.setEnabled(true);
 
         }
@@ -179,15 +182,17 @@ public class Startsida extends AppCompatActivity {
         else{
             myQude.removeQuestion();
             TextView textViewer = findViewById(R.id.textView3);
-            textViewer.setText(R.string.text_end);
+            textViewer.setText(" ");
             myQude.setNumber(1);
 
+            ImageView kista = findViewById(R.id.kista);
+            kista.setVisibility(View.VISIBLE);
             TextView rubric = findViewById(R.id.textView);
-            rubric.setText(" ");
+            rubric.setText(R.string.text_end);
             //Button buttonChangeText = findViewById(R.id.button4);
             //buttonChangeText.setVisibility(View.VISIBLE);
             Button buttonChangeVisible = findViewById(R.id.button9);
-            buttonChangeVisible.setBackgroundResource(R.drawable.spelanyrunda);
+            buttonChangeVisible.setBackgroundResource(R.drawable.spelanyrundaknapp);
             buttonChangeVisible.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -196,7 +201,7 @@ public class Startsida extends AppCompatActivity {
             });
             //buttonChangeVisible.setVisibility(View.GONE);
             Button buttonchangeble = findViewById(R.id.button5);
-            buttonchangeble.setBackgroundResource(R.drawable.huvudmeny);
+            buttonchangeble.setBackgroundResource(R.drawable.huvudmenyknapp); ///huvudmeny knapp
             buttonchangeble.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

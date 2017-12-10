@@ -12,24 +12,27 @@
         android:id="@+id/editText"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="230dp"
+        android:layout_marginBottom="20dp"
         android:layout_marginEnd="50dp"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
         android:background="@color/colorWihte"
         android:contextClickable="true"
         android:ems="10"
         android:fontFamily="sans-serif"
         android:hint="@string/textbox_question"
+
         android:inputType="textMultiLine"
+        android:minHeight="100dp"
         android:selectAllOnFocus="true"
         android:singleLine="true"
         android:textAlignment="center"
         android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button8" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/button6"
@@ -38,12 +41,13 @@
         android:layout_marginBottom="30dp"
         android:layout_marginEnd="99dp"
         android:layout_marginStart="99dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/laggtillfragagra"
-        android:enabled="false"
         android:onClick="add_question"
         app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <Button
         android:id="@+id/button7"
@@ -52,7 +56,7 @@
         android:layout_marginBottom="35dp"
         android:layout_marginEnd="99dp"
         android:layout_marginStart="99dp"
-        android:background="@drawable/oppnakistan"
+        android:background="@drawable/oppnakistanknapp"
         android:onClick="openQuestion"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,24 +66,21 @@
         android:id="@+id/button8"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="91dp"
-        android:layout_marginEnd="5dp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/info"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/infoknapp"
         android:onClick="openInfo2"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="249dp"
-        android:layout_height="95dp"
+        android:layout_width="226dp"
+        android:layout_height="83dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="44dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/fyllkistan" />
